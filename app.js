@@ -9,6 +9,7 @@ var session = require('express-session');
 var MongoStore = require('connect-mongo')(session);
 var handle = app.getRequestHandler()
 var routes = require('./pages/routes/router');
+var passport = require('passport');
 //connect to MongoDB
 mongoose.connect('mongodb://localhost/Crowdfunding');
 var db = mongoose.connection;
@@ -28,6 +29,10 @@ db.once('open', function () {
 app.prepare()
 .then(() => {
   const server = express()
+
+  server.post('/index',passport.authenticate('local',{ successRedirect: '/dash',
+  failureRedirect: '/index' }));
+  
   //use sessions for tracking logins
   server.use(session({
   secret: 'authenticate',

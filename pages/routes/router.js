@@ -17,11 +17,11 @@ app.prepare()
     //const queryParams = { title: req.params.id } 
     app.render(req, res, loginPage)
   });
-  router.get('/dash', (req, res) => {
-    const dashPage = '/dash'
+  //router.get('/dash', (req, res) => {
+  //  const dashPage = '/dash'
     //const queryParams = { title: req.params.id } 
-    app.render(req, res, dashPage)
-   });
+  //  app.render(req, res, dashPage)
+  // });
 //POST route for updating data
    router.post('/', function (req, res, next) {
   // confirm that user typed same password twice
@@ -72,8 +72,18 @@ app.prepare()
   }
 })
 
+function requiresLogin(req, res, next) {
+  if (req.session && req.session.userId) {
+    return next();
+  } else {
+    var err = new Error('You must be logged in to view this page.');
+    err.status = 401;
+    return next(err);
+  }
+}
+
 // GET route after registering
-router.get('/dash', function (req, res, next) {
+router.get('/dash', requiresLogin, function (req, res, next) {
   User.findById(req.session.userId)
     .exec(function (error, user) {
       if (error) {
@@ -90,18 +100,10 @@ router.get('/dash', function (req, res, next) {
     });
 });
 
-function requiresLogin(req, res, next) {
-    if (req.session && req.session.userId) {
-      return next();
-    } else {
-      var err = new Error('You must be logged in to view this page.');
-      err.status = 401;
-      return next(err);
-    }
-  }
-router.get('/dash', requiresLogin, function(req, res, next) {
+
+//router.get('/dash', requiresLogin, function(req, res, next) {
     //...
-});
+//});
 // GET for logout logout
 // router.get('/logout', function (req, res, next) {
 //   if (req.session) {

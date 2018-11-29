@@ -1,0 +1,77 @@
+{
+  "modules": {
+    "byIdentifier": {
+      "external \"react\"": 0,
+      "external \"next/link\"": 1,
+      "external \"next/head\"": 2,
+      "node_modules/next/dist/build/webpack/loaders/next-babel-loader.js??ref--4!pages/models/user.js": 3,
+      "external \"mongoose\"": 4,
+      "external \"bcrypt\"": 5,
+      "multi ./pages/dash.js": 6,
+      "node_modules/next/dist/build/webpack/loaders/next-babel-loader.js??ref--4!pages/dash.js": 7,
+      "multi ./pages/index.js": 8,
+      "node_modules/next/dist/build/webpack/loaders/next-babel-loader.js??ref--4!pages/index.js": 9,
+      "multi ./pages/models/user.js": 10,
+      "multi ./pages/routes/router.js": 11,
+      "node_modules/next/dist/build/webpack/loaders/next-babel-loader.js??ref--4!pages/routes/router.js": 12,
+      "external \"express\"": 13,
+      "external \"next\"": 14,
+      "multi node_modules/next/dist/pages/_app.js": 15,
+      "node_modules/next/dist/pages/_app.js": 16,
+      "external \"next/app\"": 17,
+      "multi node_modules/next/dist/pages/_error.js": 18,
+      "node_modules/next/dist/pages/_error.js": 19,
+      "external \"next/error\"": 20,
+      "multi node_modules/next/dist/pages/_document.js": 21,
+      "node_modules/next/dist/pages/_document.js": 22,
+      "external \"next/document\"": 23
+    },
+    "usedIds": {
+      "0": 0,
+      "1": 1,
+      "2": 2,
+      "3": 3,
+      "4": 4,
+      "5": 5,
+      "6": 6,
+      "7": 7,
+      "8": 8,
+      "9": 9,
+      "10": 10,
+      "11": 11,
+      "12": 12,
+      "13": 13,
+      "14": 14,
+      "15": 15,
+      "16": 16,
+      "17": 17,
+      "18": 18,
+      "19": 19,
+      "20": 20,
+      "21": 21,
+      "22": 22,
+      "23": 23
+    }
+  },
+  "chunks": {
+    "byName": {
+      "static/DbejXURiPrw1JB1qpx57x/pages/dash.js": 0,
+      "static/DbejXURiPrw1JB1qpx57x/pages/index.js": 1,
+      "static/DbejXURiPrw1JB1qpx57x/pages/models/user.js": 2,
+      "static/DbejXURiPrw1JB1qpx57x/pages/routes/router.js": 3,
+      "static/DbejXURiPrw1JB1qpx57x/pages/_app.js": 4,
+      "static/DbejXURiPrw1JB1qpx57x/pages/_error.js": 5,
+      "static/DbejXURiPrw1JB1qpx57x/pages/_document.js": 6
+    },
+    "bySource": {},
+    "usedIds": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6
+    ]
+  }
+}
