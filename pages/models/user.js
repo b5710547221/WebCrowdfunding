@@ -1,5 +1,5 @@
-var mongoose = require('mongoose');
-var bcrypt = require('bcrypt');
+/* var mongoose = require('mongoose');
+//var bcrypt = require('bcrypt');
 
 var UserSchema = new mongoose.Schema({
   email: {
@@ -37,13 +37,13 @@ UserSchema.statics.authenticate = function (email, password, callback) {
         err.status = 401;
         return callback(err);
       }
-      bcrypt.compare(password, user.password, function (err, result) {
-        if (result === true) {
-          return callback(null, user);
-        } else {
-          return callback();
-        }
-      })
+     // bcrypt.compare(password, user.password, function (err, result) {
+     //   if (result === true) {
+     //     return callback(null, user);
+     //   } else {
+     //     return callback();
+     //   }
+     // })
     });
 }
 
@@ -62,3 +62,4 @@ UserSchema.pre('save', function (next) {
 
 var User = mongoose.model('User', UserSchema);
 module.exports = User;
+ */

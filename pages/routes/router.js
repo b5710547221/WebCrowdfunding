@@ -1,4 +1,4 @@
-var express = require('express');
+/* var express = require('express');
 var router = express.Router();
 var User = require('../models/user');
 var next = require('next')
@@ -118,4 +118,4 @@ router.get('/dash', requiresLogin, function (req, res, next) {
 //   }
 // });
 })
-module.exports = router;
+module.exports = router; */

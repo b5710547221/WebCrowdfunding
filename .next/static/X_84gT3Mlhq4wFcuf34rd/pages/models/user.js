@@ -1,0 +1,1 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[5],{224:function(n,o,e){__NEXT_REGISTER_PAGE("/models/user",function(){return n.exports=e(225),{page:n.exports.default}})},225:function(n,o){}},[[224,0]]]);

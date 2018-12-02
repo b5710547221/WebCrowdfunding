@@ -1,0 +1,1 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[6],{226:function(n,o,e){__NEXT_REGISTER_PAGE("/routes/router",function(){return n.exports=e(227),{page:n.exports.default}})},227:function(n,o){}},[[226,0]]]);
